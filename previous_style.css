@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+  }
+  
+  .top-bar {
+    background-color: #000;
+    color: #fff;
+    height: 90px;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: -10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #FFD700;
+  }
+  
+  .nav-links .cta {
+    background-color: #FFD700;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  .meetings-section {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .meetings-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-subtitle {
+    color: #c9a339;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-title {
+    color: #c9a339;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+  }
+  
+  .meetings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .meeting-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-radius: 6px;
+    padding: 2rem 1rem;
+    text-align: center;
+    width: 100%;
+    max-width: 240px;
+  }
+  
+  .meeting-card img {
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+  
+  .meeting-month {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .view-files-btn {
+    background-color: #c9a339;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .view-files-btn:hover {
+    background-color: #b89328;
+  }
+  
+  .site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 1rem;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .footer-left img {
+    height: 50px;
+  }
+  
+  .footer-center {
+    flex: 1;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  .footer-right img {
+    height: 24px;
+    margin-left: 0.5rem;
+    filter: brightness(0) invert(1); /* makes icon white */
+    cursor: pointer;
+  }
+  
+  .footer-right img:hover {
+    opacity: 0.7;
+  }
+  
+  /* ✅ RESPONSIVE FOOTER */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .footer-right {
+      margin-top: 1rem;
+    }
+  }
+  
